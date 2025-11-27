@@ -29,6 +29,7 @@ tests/
 ├── Suno.MercadoBitcoin.UnitTest
 └── Suno.MercadoBitcoin.IntegrationTest
 
+
 ### 📁 Organização de Pastas
 
 src/ → Código-fonte da aplicação
