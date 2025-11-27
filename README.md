@@ -17,20 +17,22 @@ Criar uma biblioteca de integração capaz de:
 
 ---
 
-## 🏗️ Estrutura do Projeto
+## 🏗 Estrutura do Projeto
 
 src/
-
 ├── Suno.MercadoBitcoin.Domain
 ├── Suno.MercadoBitcoin.Application
 ├── Suno.MercadoBitcoin.Infra.External
 └── Suno.MercadoBitcoin.Api
 
 tests/
-
 ├── Suno.MercadoBitcoin.UnitTest
 └── Suno.MercadoBitcoin.IntegrationTest
 
+### 📁 Organização de Pastas
+
+src/ → Código-fonte da aplicação
+tests/ → Testes automatizados
 
 ---
 
