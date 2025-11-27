@@ -36,6 +36,11 @@ tests/
 - `src/` → Código-fonte da aplicação  
 - `tests/` → Testes automatizados  
 
+### 📁 Organização de Pastas
+
+src/ → Código-fonte da aplicação
+tests/ → Testes automatizados
+
 ---
 
 ## 🧠 Organização em Camadas
