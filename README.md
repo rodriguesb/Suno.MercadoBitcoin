@@ -17,8 +17,9 @@ Criar uma biblioteca de integração capaz de:
 
 ---
 
-## 🏗️ Estrutura do Projeto
+## 🏗 Estrutura do Projeto
 
+```
 src/
 ├── Suno.MercadoBitcoin.Domain
 ├── Suno.MercadoBitcoin.Application
@@ -28,13 +29,18 @@ src/
 tests/
 ├── Suno.MercadoBitcoin.UnitTest
 └── Suno.MercadoBitcoin.IntegrationTest
+```
 
+### 📁 Organização de Pastas
+
+- `src/` → Código-fonte da aplicação  
+- `tests/` → Testes automatizados  
 
 ---
 
 ## 🧠 Organização em Camadas
 
-### Domain
+### 📦 Domain
 Contém:
 - Regras de negócio
 - Entidades
@@ -42,17 +48,17 @@ Contém:
 
 ---
 
-### Application
+### 🧩 Application
 Responsável por:
 - Casos de uso
 - Interfaces de serviço
 - DTOs
-- Orquestração da lógica
+- Orquestração da lógica de negócio
 
 ---
 
-### Infra.External
-Camada de integração externa:
+### 🌐 Infra.External
+Camada de integração externa.
 
 Responsável por:
 - Comunicação HTTP
@@ -60,42 +66,47 @@ Responsável por:
 - Tratamento de falhas
 - Retry automático
 
-Tecnologias:
+Tecnologias utilizadas:
 - Refit
 - Polly
 
 ---
 
-### Tests
-Inclui:
+### 🧪 Tests
 
 #### ✅ Testes Unitários
 - Validam regras de negócio
 - Testam serviços isoladamente
 
 #### ✅ Testes de Integração
-- Simulam API com WireMock
-- Validam headers
-- Testam retry
-- Forçam falhas 500
-- Verificam timeout
-- Simulam sucesso após falha
+- Simulam a API com WireMock
+- Validam envio de headers
+- Testam retry automático
+- Forçam falhas HTTP 500
+- Validam comportamento em timeout
+- Simulam recuperação após falha
 
 ---
 
 ## 🌐 API Integrada
 
-### Endpoint:
+### 📍 Endpoint
 
+```
 GET /accounts/{accountId}/positions
+```
 
+---
 
-### Autenticação:
+### 🔐 Autenticação
 
-Bearer Token:
+A API utiliza **Bearer Token**.
 
+Exemplo de header:
+
+```
 Authorization: Bearer {TOKEN}
-
+```
 
 ---
 
@@ -116,15 +127,32 @@ Authorization: Bearer {TOKEN}
 Implementado:
 
 - Retry exponencial
-- Policy de Timeout
-- Tratamento global de erro HTTP
+- Policy de timeout
+- Tratamento global de erros HTTP
 - Repetição automática em falhas transitórias
 
 ---
 
 ## ⚙️ Configuração
 
-Exemplo de注册ção do cliente HTTP:
+Exemplo de registro do cliente HTTP:
 
 ```csharp
 services.AddMercadoBitcoin("https://api.mercadobitcoin.net", TimeSpan.FromSeconds(10));
+```
+
+---
+
+## ▶️ Executando os testes
+
+```bash
+dotnet test
+```
+
+---
+
+## 👤 Autor
+
+Projeto desenvolvido como teste técnico e demonstração de domínio em integração de APIs, arquitetura de software e automação de testes.
+
+---
