@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{CDE1713A-D14B-4B8A-88A9-D48573EDB211}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{3DA1DF24-2AA4-4B31-ACD1-782D43A24BDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infrastructure", "{8FCF4457-2591-4EB3-B815-5F1E62F38E77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Tests", "5.Tests", "{CF6A07ED-B112-4EAB-ACC1-578197CF1F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suno.MercadoBitcoin.Domain", "src\Suno.MercadoBitcoin.Domain\Suno.MercadoBitcoin.Domain.csproj", "{CBE57CD2-D4C5-4B97-9CCC-0877A9E5C604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suno.MercadoBitcoin.Application", "src\Suno.MercadoBitcoin.Application\Suno.MercadoBitcoin.Application.csproj", "{062211F7-C33A-49F9-9BB4-C228B4990E10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suno.MercadoBitcoin.Infra.External", "src\Suno.MercadoBitcoin.Infra.External\Suno.MercadoBitcoin.Infra.External.csproj", "{A624A8CA-FF6D-4481-9E70-16E80BE375E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suno.MercadoBitcoin.WebApi", "src\Suno.MercadoBitcoin.WebApi\Suno.MercadoBitcoin.WebApi.csproj", "{6F6ED331-3115-456A-9A85-A068BE80CDC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suno.MercadoBitcoin.UnitTest", "tests\Suno.MercadoBitcoin.UnitTest\Suno.MercadoBitcoin.UnitTest.csproj", "{64A34268-46CC-4487-B727-ED995076FC39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Suno.MercadoBitcoin.IntegrationTest", "tests\Suno.MercadoBitcoin.IntegrationTest\Suno.MercadoBitcoin.IntegrationTest.csproj", "{99ADEB15-7313-4A12-87E7-554736324E50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBE57CD2-D4C5-4B97-9CCC-0877A9E5C604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBE57CD2-D4C5-4B97-9CCC-0877A9E5C604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBE57CD2-D4C5-4B97-9CCC-0877A9E5C604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBE57CD2-D4C5-4B97-9CCC-0877A9E5C604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062211F7-C33A-49F9-9BB4-C228B4990E10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062211F7-C33A-49F9-9BB4-C228B4990E10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062211F7-C33A-49F9-9BB4-C228B4990E10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062211F7-C33A-49F9-9BB4-C228B4990E10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A624A8CA-FF6D-4481-9E70-16E80BE375E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A624A8CA-FF6D-4481-9E70-16E80BE375E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A624A8CA-FF6D-4481-9E70-16E80BE375E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A624A8CA-FF6D-4481-9E70-16E80BE375E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6ED331-3115-456A-9A85-A068BE80CDC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6ED331-3115-456A-9A85-A068BE80CDC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6ED331-3115-456A-9A85-A068BE80CDC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6ED331-3115-456A-9A85-A068BE80CDC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A34268-46CC-4487-B727-ED995076FC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A34268-46CC-4487-B727-ED995076FC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A34268-46CC-4487-B727-ED995076FC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A34268-46CC-4487-B727-ED995076FC39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99ADEB15-7313-4A12-87E7-554736324E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ADEB15-7313-4A12-87E7-554736324E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ADEB15-7313-4A12-87E7-554736324E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ADEB15-7313-4A12-87E7-554736324E50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBE57CD2-D4C5-4B97-9CCC-0877A9E5C604} = {3DA1DF24-2AA4-4B31-ACD1-782D43A24BDD}
+		{062211F7-C33A-49F9-9BB4-C228B4990E10} = {CDE1713A-D14B-4B8A-88A9-D48573EDB211}
+		{A624A8CA-FF6D-4481-9E70-16E80BE375E3} = {8FCF4457-2591-4EB3-B815-5F1E62F38E77}
+		{6F6ED331-3115-456A-9A85-A068BE80CDC0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{64A34268-46CC-4487-B727-ED995076FC39} = {CF6A07ED-B112-4EAB-ACC1-578197CF1F02}
+		{99ADEB15-7313-4A12-87E7-554736324E50} = {CF6A07ED-B112-4EAB-ACC1-578197CF1F02}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B304D25-0878-45C3-A899-AD0D9CB3A0C6}
+	EndGlobalSection
+EndGlobal

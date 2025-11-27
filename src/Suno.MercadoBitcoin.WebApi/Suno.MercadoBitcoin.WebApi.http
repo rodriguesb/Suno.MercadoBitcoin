@@ -1,0 +1,6 @@
+@Suno.MercadoBitcoin.WebApi_HostAddress = http://localhost:5209
+
+GET {{Suno.MercadoBitcoin.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
